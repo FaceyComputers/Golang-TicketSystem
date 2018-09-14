@@ -2,5 +2,5 @@
 A super cool ticket system built in Go
 
 
-#Todo
+# Todo
 Check the issues
