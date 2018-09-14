@@ -5,11 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>yeag</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/viewIndex.css" />
     <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
-    <h1>Current Tickets</h1>
-    {{range .Items}}<div><a href="/view/{{ . }}">{{ . }}</a></div>{{else}}<div><strong>no files</strong></div>{{end}}
+    <div class="title"><h1>Very Cool Ticketing System!</h1></div>
+    <h2 style="color: red;">Current Tickets</h2>
+    <div class="jeff">
+        <ul>
+            {{range .Items}}<li><a href="/view/{{ . }}">{{ . }}</li></a>{{else}}<div><strong>no files</strong></div>{{end}}
+        </ul>
+    </div>
 </body>
 </html>

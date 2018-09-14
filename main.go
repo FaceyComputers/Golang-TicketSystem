@@ -56,6 +56,7 @@ func main() {
 	http.HandleFunc("/view/", viewHandler)
 	http.HandleFunc("/edit/", editHandler)
 	http.HandleFunc("/save/", saveHandler)
+	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("templates/styles"))))
 	fmt.Println("Starting Listener 🤯")
 	log.Fatal(http.ListenAndServe(":8080", nil))
 
