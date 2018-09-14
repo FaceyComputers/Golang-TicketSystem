@@ -4,13 +4,10 @@ body {
     padding: 0.5em;
     text-align: center;
     background: #124;
+    color: white;
 }
 
 .title {
-    margin: 1em auto;
-    padding: 0.2em;
-    border: 4px ridge #eee;
-    width: 70%;
     color: red;
 }
 
@@ -29,4 +26,14 @@ body {
 
 a {
     color: #9fa9ff;
+}
+
+.view-description {
+    white-space:pre-line;
+    margin: 1em auto;
+    border: 4px ridge #eee;
+    margin-bottom: 1.5cm;
+    text-align: left;
+    padding: 5px;
+    width: 30%;
 }

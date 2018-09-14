@@ -11,8 +11,8 @@
 </head>
 <body>
     <div class="title"><h1>Very Cool Ticketing System!</h1></div>
-    <h2 style="color: red;">Current Tickets</h2>
     <div class="jeff">
+        <h2 style="text-align: center; color: red;">Current Tickets</h2>
         <ul>
             {{range .Items}}<li><a href="/view/{{ . }}">{{ . }}</li></a>{{else}}<div><strong>no files</strong></div>{{end}}
         </ul>

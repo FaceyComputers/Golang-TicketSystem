@@ -77,7 +77,6 @@ func viewHandler(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 		t, _ := template.ParseFiles("templates/view.html")
-		p.Body = template.HTMLEscapeString(p.Body)
 		t.Execute(w, p)
 	}
 }
